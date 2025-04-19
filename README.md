@@ -77,7 +77,7 @@ This Cloud-Init configuration file is copied to the VM to ensure compatibility w
 
 3. **Initialize Packer**:
 
-```packer init
+```packer init```
 
 4. **Build the tempate**:
 
