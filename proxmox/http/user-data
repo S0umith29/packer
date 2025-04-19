@@ -1,0 +1,33 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: en_US
+  keyboard:
+    layout: us
+  ssh:
+    install-server: true
+    allow-pw: true
+    disable_root: true
+    ssh_quiet_keygen: true
+    allow_public_ssh_keys: true
+  packages:
+    - qemu-guest-agent
+    - sudo
+  storage:
+    layout:
+      name: direct
+    swap:
+      size: 0
+  user-data:
+    package_upgrade: false
+    timezone: Europe/Berlin
+    users:
+      - name: soumith
+        groups: [adm, sudo]
+        lock-passwd: false
+        sudo: ALL=(ALL) NOPASSWD:ALL
+        shell: /bin/bash
+        # passwd: soumi329
+        # - or -
+        ssh_authorized_keys:
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCZ0R3smagnBp8VMuCwK0NyltXO/H3x+PIupki7P5iuRtRU3+rY3+NQYuQW+X73mHU/Q0dyewQgChAVOhEZPR3t1tZUKer93tTOddEUTV+U8PJsbbIbLgcEHzbHNgL/lPQl/uMbF98bE6qCBj0Q9kPpHiE0V/qvsTxpdCDf9Zx7hJ3561aRv1a8ciOMh5ucL1natQyzp1Fy3TZEcNytPv7Hn250mBAnHPmvcD3pFg58+zwRRdyxQbAKrwPaAg7vs6W9pzaY7/hPxQYX2npexv7TtQZgZqsaJhm3N35e/mROjDtUsX/+/gL0pBJLWk/TeSmdUxbGs9MJe3DYuF+z4+o2PaP4a2w8a6dFObtAeBl3GmdQ7zm+7sIdnW8YsxSENyZX1GdkTWxE01gk1rFuwiK31siLAqbrml5tiiVtXpZEGeO9J6Za/KwjVwV+b0BpNVhrwuW3kL4MCfEQBDOALb0Cu1aK/xtQe4E4k/HqfB68k/v4BvZvq84dMjX/b64vQaL7A1VyLKWq3crppmwdtMS+xU7L9V4QtC+AYC0rjVr2WPSnk4NiEUrSkskEWxmRZqT0+YzQarigHlpaM5QZltqCLm5G0wn6na7JQ+jsTmn8vhSscSAxdVH1ElEWx1wlGPPSFaa9fKy5X6GVUsBZ+dMq/NyAcy5mA2oc1PHr5DsWdw== skuppave@odu.edu

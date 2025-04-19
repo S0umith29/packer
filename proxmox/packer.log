@@ -1,0 +1,109 @@
+2025/03/16 21:43:41 [INFO] Packer version: 1.10.2 [go1.20.12 linux amd64]
+2025/03/16 21:43:41 [TRACE] discovering plugins in /usr/local/bin
+2025/03/16 21:43:41 [TRACE] discovering plugins in .
+2025/03/16 21:43:41 [TRACE] discovering plugins in /home/soumith/.config/packer/plugins
+2025/03/16 21:43:41 [INFO] Discovered potential plugin: proxmox = /home/soumith/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64
+2025/03/16 21:43:41 [INFO] found external [-packer-default-plugin-name- clone iso] builders from proxmox plugin
+2025/03/16 21:43:41 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/03/16 21:43:41 [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/soumith/.packerconfig
+2025/03/16 21:43:41 [WARN] Config file doesn't exist: /home/soumith/.packerconfig
+2025/03/16 21:43:41 [INFO] Setting cache directory: /home/soumith/.cache/packer
+2025/03/16 21:43:41 [INFO] Starting external plugin /home/soumith/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 start builder iso
+2025/03/16 21:43:41 Starting plugin: /home/soumith/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 []string{"/home/soumith/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64", "start", "builder", "iso"}
+2025/03/16 21:43:41 Waiting for RPC address for: /home/soumith/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64
+2025/03/16 21:43:41 Received unix RPC address for /home/soumith/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64: addr is /tmp/packer-plugin4193683868
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 Plugin address: unix /tmp/packer-plugin4193683868
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 Waiting for connection...
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 Serving a plugin connection...
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 [TRACE] starting builder iso
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 Number of sockets 0 is too small, using default: 1
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 CPU type not set, using default 'kvm64'
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 OS not set, using default 'other'
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 Disk 0 cache mode not set, using default 'none'
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 Cloud-Init disk type not set, using default 'ide'
+2025/03/16 21:43:41 [INFO] Starting internal plugin packer-provisioner-shell
+2025/03/16 21:43:41 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-provisioner-shell"}
+2025/03/16 21:43:41 Waiting for RPC address for: /usr/local/bin/packer
+2025/03/16 21:43:41 packer-provisioner-shell plugin: [INFO] Packer version: 1.10.2 [go1.20.12 linux amd64]
+2025/03/16 21:43:41 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/03/16 21:43:41 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/soumith/.packerconfig
+2025/03/16 21:43:41 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/soumith/.packerconfig
+2025/03/16 21:43:41 packer-provisioner-shell plugin: [INFO] Setting cache directory: /home/soumith/.cache/packer
+2025/03/16 21:43:41 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2025/03/16 21:43:41 Received unix RPC address for /usr/local/bin/packer: addr is /tmp/packer-plugin68272608
+2025/03/16 21:43:41 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin68272608
+2025/03/16 21:43:41 packer-provisioner-shell plugin: Waiting for connection...
+2025/03/16 21:43:41 packer-provisioner-shell plugin: Serving a plugin connection...
+2025/03/16 21:43:41 [INFO] Starting internal plugin packer-provisioner-file
+2025/03/16 21:43:41 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-provisioner-file"}
+2025/03/16 21:43:41 Waiting for RPC address for: /usr/local/bin/packer
+2025/03/16 21:43:41 packer-provisioner-file plugin: [INFO] Packer version: 1.10.2 [go1.20.12 linux amd64]
+2025/03/16 21:43:41 packer-provisioner-file plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/03/16 21:43:41 packer-provisioner-file plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/soumith/.packerconfig
+2025/03/16 21:43:41 packer-provisioner-file plugin: [WARN] Config file doesn't exist: /home/soumith/.packerconfig
+2025/03/16 21:43:41 packer-provisioner-file plugin: [INFO] Setting cache directory: /home/soumith/.cache/packer
+2025/03/16 21:43:41 packer-provisioner-file plugin: args: []string{"packer-provisioner-file"}
+2025/03/16 21:43:41 Received unix RPC address for /usr/local/bin/packer: addr is /tmp/packer-plugin1108947012
+2025/03/16 21:43:41 packer-provisioner-file plugin: Plugin address: unix /tmp/packer-plugin1108947012
+2025/03/16 21:43:41 packer-provisioner-file plugin: Waiting for connection...
+2025/03/16 21:43:41 packer-provisioner-file plugin: Serving a plugin connection...
+2025/03/16 21:43:41 [INFO] Starting internal plugin packer-provisioner-shell
+2025/03/16 21:43:41 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-provisioner-shell"}
+2025/03/16 21:43:41 Waiting for RPC address for: /usr/local/bin/packer
+2025/03/16 21:43:41 packer-provisioner-shell plugin: [INFO] Packer version: 1.10.2 [go1.20.12 linux amd64]
+2025/03/16 21:43:41 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/03/16 21:43:41 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/soumith/.packerconfig
+2025/03/16 21:43:41 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/soumith/.packerconfig
+2025/03/16 21:43:41 packer-provisioner-shell plugin: [INFO] Setting cache directory: /home/soumith/.cache/packer
+2025/03/16 21:43:41 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2025/03/16 21:43:41 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin3301879645
+2025/03/16 21:43:41 packer-provisioner-shell plugin: Waiting for connection...
+2025/03/16 21:43:41 Received unix RPC address for /usr/local/bin/packer: addr is /tmp/packer-plugin3301879645
+2025/03/16 21:43:41 packer-provisioner-shell plugin: Serving a plugin connection...
+
+  on ubuntu-server-jammy.pkr.hcl line 20:
+  (source code not available)
+
+2025/03/16 21:43:41 Build debug mode: true
+2025/03/16 21:43:41 Force build: false
+2025/03/16 21:43:41 On error: 
+2025/03/16 21:43:41 Debug enabled, so waiting for build to finish: ubuntu-server-jammy.proxmox-iso.ubuntu-server-jammy
+2025/03/16 21:43:41 Starting build run: ubuntu-server-jammy.proxmox-iso.ubuntu-server-jammy
+2025/03/16 21:43:41 Running builder: 
+2025/03/16 21:43:41 [INFO] (telemetry) Starting builder proxmox-iso.ubuntu-server-jammy
+Warning: storage_pool_type is deprecated and should be omitted, it will be removed in a later version of the proxmox plugin
+
+  on ubuntu-server-jammy.pkr.hcl line 20:
+  (source code not available)
+
+
+Debug mode enabled. Builds will not be parallelized.
+[1;32mubuntu-server-jammy.proxmox-iso.ubuntu-server-jammy: output will be in this color.[0m
+
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 using token auth
+2025/03/16 21:43:41 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:41 No CD files specified. CD disk will not be made.
+[1;32m==> ubuntu-server-jammy.proxmox-iso.ubuntu-server-jammy: Pausing after run of step 'StepCreateCD'. Press enter to continue.[0m 
+2025/03/16 21:43:46 packer-provisioner-file plugin: Received interrupt signal (count: 1). Ignoring.
+2025/03/16 21:43:46 packer-provisioner-shell plugin: Received interrupt signal (count: 1). Ignoring.
+2025/03/16 21:43:46 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:46 Received interrupt signal (count: 1). Ignoring.
+2025/03/16 21:43:46 packer-provisioner-shell plugin: Received interrupt signal (count: 1). Ignoring.
+2025/03/16 21:43:46 Cancelling builder after context cancellation context canceled
+Cancelling build after receiving interrupt
+2025/03/16 21:43:46 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:46 Error asking for input: interrupted
+2025/03/16 21:43:46 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:46 No URLs were provided to Step Download. Continuing...
+2025/03/16 21:43:46 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:46 Error asking for input: interrupted
+2025/03/16 21:43:46 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:46 Error asking for input: interrupted
+2025/03/16 21:43:46 packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64 plugin: 2025/03/16 21:43:46 Error asking for input: interrupted
+2025/03/16 21:43:46 [INFO] (telemetry) ending proxmox-iso.ubuntu-server-jammy
+2025/03/16 21:43:46 Waiting on builds to complete...
+==> Wait completed after 4 seconds 397 milliseconds
+[1;31mBuild 'ubuntu-server-jammy.proxmox-iso.ubuntu-server-jammy' errored after 4 seconds 397 milliseconds: build was cancelled[0m
+
+==> Wait completed after 4 seconds 397 milliseconds
+Cleanly cancelled builds after being interrupted.
+2025/03/16 21:43:46 [INFO] (telemetry) Finalizing.
+2025/03/16 21:43:46 waiting for all plugin processes to complete...
+2025/03/16 21:43:46 /home/soumith/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.2_x5.0_linux_amd64: plugin process exited
+2025/03/16 21:43:46 /usr/local/bin/packer: plugin process exited
+2025/03/16 21:43:46 /usr/local/bin/packer: plugin process exited
+2025/03/16 21:43:46 /usr/local/bin/packer: plugin process exited
