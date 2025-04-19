@@ -83,7 +83,7 @@ This Cloud-Init configuration file is copied to the VM to ensure compatibility w
 4. **Build the tempate**:
 
     ```bash
-    packer build ubuntu-server-jammy.pkr.hcl```
+    packer build ubuntu-server-jammy.pkr.hcl
 
     - This will create a VM template named ubuntu-server-focal on your Proxmox node.
 
