@@ -20,9 +20,9 @@
 source "proxmox-iso" "ubuntu-server-focal" {
 
     # Proxmox Connection Settings
-    proxmox_url = "https://172.18.6.101:8006/api2/json"
-    username = "root@pam!terraform"
-    token = "17265410-d1d1-4016-a691-8202b3d0efb3"
+    proxmox_url = {YOUR_PROXMOX_SERVER_URL}
+    username = {{YOUR_USERNAME}}
+    token = {{YOUR_API_TOKEN_FOR_PROXMOX}}
     # (Optional) Skip TLS Verification
     insecure_skip_tls_verify = true
 
